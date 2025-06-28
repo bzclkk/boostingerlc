@@ -118,7 +118,7 @@
 
   <!-- Script -->
   <script>
-  window.addEventListener('load', () => {
+    // Force 4 second fake loading screen
     setTimeout(() => {
       const loader = document.getElementById('loading-screen');
       const main = document.getElementById('main-content');
@@ -128,9 +128,8 @@
         main.style.opacity = '1';
         main.style.pointerEvents = 'all';
       }, 600);
-    }, 4000); // Waits 4 seconds before fading out
-  });
-</script>
-  
+    }, 4000); // 4s delay
+  </script>
+
 </body>
 </html>
